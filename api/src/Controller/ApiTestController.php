@@ -21,7 +21,7 @@ class ApiTestController extends AbstractController
         ]);
     }
     /**
-     * @Route("/post",name="postrequest", methods={"POST"})
+     * @Route("/post",name="postrequest", options={"expose" = true}, methods={"POST"})
      */
     public function postrequest(): Response{
         return $this->json([
